@@ -117,7 +117,7 @@ module.exports.typeOf = typeOf;
  * @return {Number} : Index value at which the element is found or -1 if not.
  */
  
- function indeOf(array, value) {
+ function indexOf(array, value) {
     for(let i = 0; i < array.length; i++) {
       if(array[i] === value){
         return i;
@@ -126,7 +126,7 @@ module.exports.typeOf = typeOf;
     return -1;
  }
  
- module.exports.indeOf = indeOf;
+ module.exports.indexOf = indexOf;
  
   
 /**
@@ -183,7 +183,7 @@ module.exports.each = each;
      let newArr = [];
      for(let i = 0; i < array.length; i++) {
         // using indexOf function
-        if(_.indexOf(newArr, array[i]) === -1){
+        if(indexOf(newArr, array[i]) === -1){
             newArr.push(array[i]);
         }
      }
